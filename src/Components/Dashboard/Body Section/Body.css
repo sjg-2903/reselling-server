@@ -1,0 +1,83 @@
+.body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y:auto
+}
+
+
+.image-table-container {
+  margin-top: 20px;
+  width: 100%;
+  
+}
+.a2{
+  margin-top: 20px;
+}
+
+.image-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 30px;
+}
+
+.image-table th,
+.image-table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.image-table th {
+  background-color: #f2f2f2;
+}
+
+.image-table img {
+  width: 50px;
+  height: 25px;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+button {
+  padding: 8px 12px;
+  margin: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.uploadbuttonbanner{
+  margin-top: -30px;
+  margin-left: 600px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+
+   /* Adjust the value to set the desired space between buttons */
+}

@@ -1,0 +1,19 @@
+/* NewsContent.css */
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  
+  .table-cell {
+    border: 0.5px solid black;
+    padding: 8px;
+  }
+  
+  .table-cell-bold {
+    font-weight: bold;
+    background-color: lightblue;
+  }
+  

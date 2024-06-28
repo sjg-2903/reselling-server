@@ -1,0 +1,81 @@
+/* Sidebar.css */
+.sidebar-container {
+  display: flex; /* This makes the sidebar stretch to full viewport height */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  width:200px;/* Adjust width as needed */
+  box-shadow: grey;
+  height: 200vh;
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  overflow-x: hidden;
+
+}
+
+.sidebar-logo img {
+  width: 150px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar-link.active,
+.sidebar-link:hover {
+  background-color:grey;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+}
+
+.link-text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.dropdown-arrow {
+  display: none;
+  margin-right: 40px;
+}
+
+.sidebar-link:hover .dropdown-arrow {
+  display: inline-block;
+  margin-left: 5px; /* Space between the text and the arrow */
+}
+
+.sidebar .dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px; /* Indent dropdown items */
+}
+
+.sidebar .dropdown-menu .sidebar-link {
+  padding-left: 30px; /* Additional indent to distinguish from parent items */
+  background-color: #f0f0f0; /* Light background color */
+  border-left: 2px solid #ccc; /* Left border for visual distinction */
+}
+
+.sidebar .dropdown-menu .sidebar-link:hover, 
+.sidebar .dropdown-menu .sidebar-link.active {
+  background-color: #e0e0e0; /* Slightly darker on hover and active */
+}
